@@ -1,2 +1,19 @@
 docker logs <CONTAINER ID> = see logs of specific container
- 
+docker logs <CONTAINER ID> | tail = see few last logs of specific container
+docker logs <CONTAINER ID> -f = stream the logs (you can put a line, to see latest changes
+docker stop <CONTAINER ID>
+docker run -d p6001:6379 --name redis-older redis:4.0
+docker run -d p6000:6379 --name redis-latest redis:4.0
+docker exec -it <CONTAINER ID> /bin/bash
+docker exec -it <NAME> /bin/bash
+docker exec -it redis-older /bin/bash
+
+docker run = create new container
+docker start = start or restart a container
+
+docker network ls
+docker network create mongo-network
+docker network ls
+docker run mongo -p27017:27017 -d mongo
+docker run -p27017:27017 -d mongo -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password mongo
+docker run -p27017:27017 -d mongo -e MONGO_INITDB_ROOT_USERNAME=admin -e MONGO_INITDB_ROOT_PASSWORD=password --name mongodb --net mongo-network mongo
