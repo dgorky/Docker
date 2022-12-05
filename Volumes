@@ -2,6 +2,10 @@ HOSTED VOLUMES
 ANONYMOUS VOLUMES
 NAMED VOLUMES
 
+DOCKER VOLUME LOCATIONS:
+WINDOWS: C:\ProgramData\docker\volumes
+LINUX/MAC: /var/lib/docker/volumes
+
 version: '3'
 services:
   my-app:
