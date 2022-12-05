@@ -41,3 +41,7 @@ docker rm <CONTAINER ID>
 docker rmi <IMAGE ID>
 docker images
 docker build -t my-app:1.0 .
+docker run my-app:1.0
+docker ps
+docker exec -it <CONTAINER ID> /bin/sh
+ls /home/app
