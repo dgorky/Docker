@@ -1,0 +1,9 @@
+STEPS TO RUN NEXUS ON DROPLET:
+Install Java
+Download Nexus package
+Untar Nexus package
+Create Nexus User
+Give User permissions
+Run Nexus with Nexus User
+
+RUN NEXUS AS A DOCKER CONTAINER:
