@@ -1,0 +1,30 @@
+Built application locally (JAR)
+Built Docker Images (image)
+Pushed to Nexus Repository (Nexus)
+
+Developer --> Git Repo --> Should be tested and build
+
+AVOIDING:
+- stash working changes and move to Master Branch - update local state
+- login to correct Docker Repository
+- set up the test enironment to run tests
+- execute tests (meanwhile you CAN'T code
+- build Docker Image and push to repo
+
+Test Code --> Build application --> Push to Repository --> Deploy to server = BUILD AUTOMATION
+- Run tests
+- Build artifacts
+- Publish artifacts
+- Deploy artifacts
+- Send notifications
+- and more!
+
+JENKINS:
+Docker
+Build Tools
+Repositories
+Deployment Servers
+
+- install Jenkins and prepare everything
+- setup needs to be done only once
+- plugins, credentials etc. can be used for different projects
