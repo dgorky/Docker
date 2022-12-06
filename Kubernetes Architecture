@@ -1,0 +1,43 @@
+NODE PROCESSES
+Example:
+- 1 node
+- 2 applications
+  - each Node has multiple Pods on it
+  - 3 processes must be installed on every Node
+  - Worker Nodes do the actual work
+
+Container runtime:
+- Containerd
+- Docker
+- Cri-o
+
+Kubelet:
+- Interacts with both the container and node
+- Kubelet starts the pod with a container inside
+
+Kube Proxy:
+- Must be installed on all nodes 
+- Forwards the requests
+
+SUMMARIZE:
+3 Node Processes:
+- Kubelet (on all nodes)
+- Kube Proxy (on all nodes)
+- Container runtime
+Managing processes are done by Master Nodes
+
+MASTER PROCESSES
+4 processes run on every master node
+- API SERVER via client - cluster gateway / acts as a gatekeeper for authentication!
+- SCHEDULAR = just decides on which node new Pod should be scheduled. Schedule new Pod --> API Server --> Scheduler --> Where to put the Pod? --> Kubelet
+- CONTROLLER MANAGER = Controller Manager --> Scheduler --> Kubelets (Reschedule the dead Pods)
+- ETCD = the cluster brain / Cluster changes get stored in the key value store / Application data is NOT stored in etcd!
+
+Example Cluster Set-Up
+2 Masters Nodes
+3 Worker Nodes
+
+Add new Master/Node server:
+- Get new bare server
+- Install all the master/worker node processes
+- add it to the cluster
