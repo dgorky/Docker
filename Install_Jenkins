@@ -1,0 +1,9 @@
+OPEN TERMINAL ON THE UBUNTU SERVER:
+docker
+apt update
+apt install docker.io
+docker (to check if docker is installed)
+docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+docker ps
+docker exec -it <CONTAINER ID> bash
+docker exec -u 0 -it <CONTAINER ID> bash = enter container as root
