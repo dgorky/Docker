@@ -1,0 +1,11 @@
+Minikube and Kubectl
+What is minikube?
+- A Node where Master and Node processes run on ONE machine (Test locally)
+- Docker pre-installed
+
+What is kubectl?
+- Command line tool for K8s cluster: the most powerful of 3 clients
+
+Set-up Minikube cluster
+- https://kubernetes.io/docs/tasks/tools/install-minikube
+- https://kubernetes.io/docs/tasks/tools/install-kubectl
