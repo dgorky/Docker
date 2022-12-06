@@ -7,3 +7,11 @@ docker run -p 8080:8080 -p 50000:50000 -d -v jenkins_home:/var/jenkins_home jenk
 docker ps
 docker exec -it <CONTAINER ID> bash
 docker exec -u 0 -it <CONTAINER ID> bash = enter container as root
+
+apt install curl
+curl -sl https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
+ls
+bash nodesource_setup.sh
+apt install nodejs
+nodejs -v
+npm -v
