@@ -1,0 +1,7 @@
+Build Java App --> Run Tests --> Build Image --> Push to private Repo
+
+Pipeline Jobs
+- Suitable for CI/CD
+- Scripting - pipeline as code
+  - using plugins
+  - executing tools
