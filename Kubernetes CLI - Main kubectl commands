@@ -1,0 +1,24 @@
+kubectl get nodes
+kubectl get pod
+kubectl get services
+kubectl create -h
+
+kubectl create deployment nginx-depl --image=nginx
+kubectl get deployment
+kubectl get pod
+kubectl get replicaset
+kubectl edit deployment nginx-depl = auto generated configuration file of the deployment
+kubectl get pod
+
+
+
+
+
+
+
+
+Deployment manages a replicaset
+Replicaset manages all the replicas of that Pod
+Pod is an abstraction of a container
+Container
+Everything below Deployment is handled by Kubernetes
