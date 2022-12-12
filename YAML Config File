@@ -1,0 +1,26 @@
+Each configuration file has 3 parts:
+1) metadata
+2) specification
+3) status
+
+etcd hold the currect status of any K8s component!
+
+## nginx-deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: nginx-deployment
+    labels:
+spec:
+    replicas: 2
+    selector:
+    template:
+
+## nginx-service.yaml
+apiVersion: v1
+kind: Service
+metadata:
+    name: nginx-service
+spec:
+    selector:
+    ports:
