@@ -1,3 +1,6 @@
+sudo usermod -aG docker $USER && newgrp docker
+minikube start
+
 kubectl get nodes
 kubectl get pod
 kubectl get services
@@ -9,13 +12,13 @@ kubectl get pod
 kubectl get replicaset
 kubectl edit deployment nginx-depl = auto generated configuration file of the deployment
 kubectl get pod
-
-
-
-
-
-
-
+kubectl describe pod <POD NAME>
+kubectl delete deployment nginx-depl
+kubectl create deployment name image option1
+kubectl apply -f <FILE NAME>
+kubectl apply -f config-file.yaml
+kubectl apply -f nginx-deployment.yaml
+touch nginx-deployment.yaml
 
 Deployment manages a replicaset
 Replicaset manages all the replicas of that Pod
